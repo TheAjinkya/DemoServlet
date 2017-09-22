@@ -7,7 +7,7 @@
 	<div class="container">
 		<div class="col-md-12">
 			<div class="panel panel-primary">
-				<div class="panel-heading">Data Input</div>
+				<div class="panel-heading">Login</div>
 				<div class="panel-body">
 
 					<form class="form-horizontal" name="myForm" action="DemoServlet" method="get">

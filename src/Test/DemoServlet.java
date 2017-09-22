@@ -22,7 +22,7 @@ public class DemoServlet extends HttpServlet {
 			
 		} else {
 			
-			out.print("Sorry UserName or Password Error!");  
+			out.print("Sorry UserName and Password does not match!");  
 	        RequestDispatcher rd=request.getRequestDispatcher("/index.jsp");  
 	        rd.include(request, response);  
 

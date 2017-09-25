@@ -19,7 +19,7 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>DemoServlet</servlet-name>
-    <url-pattern>/</url-pattern>
+    <url-pattern>/DemoServlet</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
     <servlet-name>welcomePage</servlet-name>

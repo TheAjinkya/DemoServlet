@@ -16,17 +16,16 @@ public class DemoServlet extends HttpServlet {
 
 		if (userName.equals("ajinkya")) {
 
-			RequestDispatcher rd = request.getRequestDispatcher("welcome");
+			RequestDispatcher rd = request.getRequestDispatcher("welcomePage");
 			rd.forward(request, response);
 
 		} else {
+			
+			out.print("This is not a valid login");
 
-			out.print("<div class=\"alert alert-danger\">\r\n"
-					+ "  <strong>Login Failed!</strong> UserName and Password does not match!\r\n"
-					+ "</div>");
-			RequestDispatcher rd = request.getRequestDispatcher("/index.jsp");
-			rd.include(request, response);
-
+			out.print("<span class=\"d-block bg-primary\">Login Failed! UserName and Password does not match!</span>");
+//			RequestDispatcher rd = request.getRequestDispatcher("/index.html");
+//			rd.include(request, response);
 		}
 
 		out.close();

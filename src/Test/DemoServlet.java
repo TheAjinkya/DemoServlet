@@ -14,18 +14,28 @@ public class DemoServlet extends HttpServlet {
 
 		String userName = request.getParameter("userName");
 
-		if (userName.equals("ajinkya")) {
+		String firstName = request.getParameter("firstName");
 
-			RequestDispatcher rd = request.getRequestDispatcher("welcomePage");
+		
+		try {
+			if (userName.equals("ajinkya")) {
+				
+				Cookie ck = new Cookie("ajinkya", firstName);
+
+				response.addCookie(ck);
+
+				RequestDispatcher rd = request.getRequestDispatcher("welcomePage");
+				rd.forward(request, response);
+
+			} else {
+
+				out.print("<a class=\"btn btn-danger text-center\">Login Failed! Try Again!</a>");
+				request.getRequestDispatcher("index.html").include(request, response);
+			}
+		}catch (Exception e) {
+			out.print("<a class=\"btn btn-danger text-center\">Login Failed! Try Again!</a>");
+			RequestDispatcher rd = request.getRequestDispatcher("index.html");
 			rd.forward(request, response);
-
-		} else {
-			
-			out.print("This is not a valid login");
-
-			out.print("<span class=\"d-block bg-primary\">Login Failed! UserName and Password does not match!</span>");
-//			RequestDispatcher rd = request.getRequestDispatcher("/index.html");
-//			rd.include(request, response);
 		}
 
 		out.close();

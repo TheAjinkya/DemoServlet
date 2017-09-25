@@ -6,7 +6,7 @@
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
-<title>Material Design Bootstrap</title>
+<title>Login Module</title>
 <!-- Font Awesome -->
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -22,132 +22,128 @@
 
 	<!-- Start your project here-->
 	<!--Main Navigation-->
-	<header>
-		<!--Navbar-->
-		<nav class="navbar navbar-expand-lg navbar-dark indigo fixed-top">
-			<div class="container">
+	<!--Navbar-->
 
-				<!-- Navbar brand -->
-				<a class="navbar-brand" href="#">Navbar</a>
+	<!--/.Navbar-->
 
-				<!-- Collapse button -->
-				<button class="navbar-toggler" type="button" data-toggle="collapse"
-					data-target="#navbarSupportedContent"
-					aria-controls="navbarSupportedContent" aria-expanded="false"
-					aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
 
-				<!-- Collapsible content -->
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+	<!--Mask-->
+	<div id="intro" class="view">
 
-					<!-- Links -->
-					<ul class="navbar-nav mr-auto">
-						<li class="nav-item active"><a class="nav-link" href="#">Home
-								<span class="sr-only">(current)</span>
-						</a></li>
-						<li class="nav-item"><a class="nav-link" href="#">Features</a>
-						</li>
-						<li class="nav-item"><a class="nav-link" href="#">Pricing</a>
-						</li>
-
-						<!-- Dropdown -->
-						<li class="nav-item dropdown"><a
-							class="nav-link dropdown-toggle" id="navbarDropdownMenuLink"
-							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-							<div class="dropdown-menu dropdown-primary"
-								aria-labelledby="navbarDropdownMenuLink">
-								<a class="dropdown-item" href="#">Action</a> <a
-									class="dropdown-item" href="#">Another action</a> <a
-									class="dropdown-item" href="#">Something else here</a>
-							</div></li>
-
-					</ul>
-					<!-- Links -->
-
-					<!-- Search form -->
-					<form class="form-inline">
-						<input class="form-control mr-sm-2" type="text"
-							placeholder="Search" aria-label="Search">
-					</form>
-				</div>
-				<!-- Collapsible content -->
-
-			</div>
-		</nav>
-		<!--/.Navbar-->
-
-		<!--Mask-->
-		<div id="intro" class="view">
-
-			<div class="full-bg-img">
+		<div class="full-bg-img">
+			<nav class="navbar navbar-expand-lg navbar-dark indigo">
 				<div class="container">
-					<div class="row" style="padding-top: 10%">
-						<div class="col-md-12">
-							<div class="col-md-6">
-								<div class="card">
 
-									<div class="card-body">
-										<h3 class="card-header primary-color white-text">Sign up</h3>
-										<form name="myForm" action="DemoServlet" method="get">
-											<!-- <p class="h5 text-center mb-6">Sign up</p>-->
+					<!-- Navbar brand -->
+					<a class="navbar-brand" href="#">Navbar</a>
 
-											<div class="md-form">
-												<i class="fa fa-user prefix grey-text"></i> <input
-													type="text" id="orangeForm-name" name="firstName" class="form-control">
-												<label for="orangeForm-name">Your First name</label>
-											</div>
-											
-											<div class="md-form">
-												<i class="fa fa-user prefix grey-text"></i> <input
-													type="text" id="orangeForm-name" name="lastName" class="form-control">
-												<label for="orangeForm-name">Your Last name</label>
-											</div>
-											
-											<div class="md-form">
-												<i class="fa fa-user prefix grey-text"></i> <input
-													type="text" id="orangeForm-name" name="userName" class="form-control">
-												<label for="orangeForm-name">Your Username</label>
-											</div>
-											
-											
-											<div class="md-form">
-												<i class="fa fa-envelope prefix grey-text"></i> <input
-													type="text" id="orangeForm-email" name="email" class="form-control">
-												<label for="orangeForm-email">Your email</label>
-											</div>
+					<!-- Collapse button -->
+					<button class="navbar-toggler" type="button" data-toggle="collapse"
+						data-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent" aria-expanded="false"
+						aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
 
-											<div class="md-form">
-												<i class="fa fa-lock prefix grey-text"></i> <input
-													type="password" id="orangeForm-pass" name="password" class="form-control">
-												<label for="orangeForm-pass">Your password</label>
-											</div>
+					<!-- Collapsible content -->
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-											<div class="text-center">
-												<button type="submit" class="btn btn-primary">Sign up</button>
-											</div>
+						<!-- Links -->
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item active"><a class="nav-link" href="#">Home
+									<span class="sr-only">(current)</span>
+							</a></li>
+							<li class="nav-item"><a class="nav-link" href="DemoServlet">Login</a>
+							</li>
+							<li class="nav-item"><a class="nav-link"
+								href="ProfileServlet">Profile</a></li>
+							<li class="nav-item"><a class="nav-link"
+								href="LogoutServlet">Log Out</a></li>
 
-										</form>
+						</ul>
+						<!-- Links -->
 
-									</div>
-								</div>
-								<!-- Form register -->
-							</div>
-							<!-- Form register -->
-						</div>
+						<!-- Search form -->
+						<form class="form-inline">
+							<input class="form-control mr-sm-2" type="text"
+								placeholder="Search" aria-label="Search">
+						</form>
 					</div>
+					<!-- Collapsible content -->
+
 				</div>
-			</div>
+			</nav>
+
 		</div>
+	</div>
 
-		<!--/.Mask-->
+	<!--/.Mask-->
 
 
-	</header>
 	<!--Main Navigation-->
 
 	<!--Main layout-->
-	<main> </main>
+	<main>
+	<div class="container">
+		<div class="row" style="padding-top: 10%">
+			<div class="col-md-12">
+				<div class="col-md-6">
+					<div class="card">
+
+						<div class="card-body">
+							<h3 class="card-header primary-color white-text">Sign up</h3>
+							<form name="myForm" action="DemoServlet" method="get">
+								<!-- <p class="h5 text-center mb-6">Sign up</p>-->
+
+								<div class="md-form">
+									<i class="fa fa-user prefix grey-text"></i> <input type="text"
+										id="orangeForm-name" name="firstName" class="form-control">
+									<label for="orangeForm-name">Your First name</label>
+								</div>
+
+								<div class="md-form">
+									<i class="fa fa-user prefix grey-text"></i> <input type="text"
+										id="orangeForm-name" name="lastName" class="form-control">
+									<label for="orangeForm-name">Your Last name</label>
+								</div>
+
+								<div class="md-form">
+									<i class="fa fa-user prefix grey-text"></i> <input type="text"
+										id="orangeForm-name" name="userName" class="form-control">
+									<label for="orangeForm-name">Your Username</label>
+								</div>
+
+
+								<div class="md-form">
+									<i class="fa fa-envelope prefix grey-text"></i> <input
+										type="text" id="orangeForm-email" name="email"
+										class="form-control"> <label for="orangeForm-email">Your
+										email</label>
+								</div>
+
+								<div class="md-form">
+									<i class="fa fa-lock prefix grey-text"></i> <input
+										type="password" id="orangeForm-pass" name="password"
+										class="form-control"> <label for="orangeForm-pass">Your
+										password</label>
+								</div>
+
+								<div class="text-center">
+									<button type="submit" class="btn btn-primary">Sign up</button>
+								</div>
+
+							</form>
+
+						</div>
+					</div>
+					<!-- Form register -->
+				</div>
+				<!-- Form register -->
+			</div>
+		</div>
+	</div>
+
+	</main>
 	<!--Main layout-->
 
 	<!--Footer-->
@@ -169,7 +165,7 @@
 	<!-- MDB core JavaScript -->
 	<script type="text/javascript" src="js/mdb.min.js"></script>
 	<script
-	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+		src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 	<script>
 		var app = angular.module("myApp", [])
 

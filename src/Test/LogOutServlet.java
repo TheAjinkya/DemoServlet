@@ -21,14 +21,23 @@ public class LogOutServlet extends HttpServlet {
         
         request.getRequestDispatcher("index.html").include(request, response);  
         
-        Cookie ck=new Cookie("firstName","");  
-        ck.setMaxAge(0);  
-        response.addCookie(ck);  
-          
-        out.print("you are successfully logged out!");
-		
-		
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+        
+        
+        Cookie ck[]= request.getCookies();  
+        if(ck!=null){  
+        	
+/*        	This is */
+        	ck[0].setValue(null);  
+            response.addCookie(ck[0]);
+            out.print("<a class=\\\"btn btn-danger text-center\\\">You logged Out Successfully</a>"); 
+         
+         
+        }else{  
+            out.print("<a class=\\\"btn btn-danger text-center\\\">Please Login first!</a>");  
+            /*request.getRequestDispatcher("index.html").include(request, response);*/  
+        }  
+        out.close();  
+       
 	}
 
 	

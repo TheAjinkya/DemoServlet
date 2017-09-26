@@ -20,12 +20,16 @@ public class DemoServlet extends HttpServlet {
 		try {
 			if (userName.equals("ajinkya")) {
 				
-				Cookie ck = new Cookie("ajinkya", firstName);
+				Cookie ck = new Cookie("user", firstName);
 
 				response.addCookie(ck);
+				
+//				HttpSession session = request.getSession();
+//				
+//				session.setAttribute("uname", firstName);
 
 				RequestDispatcher rd = request.getRequestDispatcher("welcomePage");
-				rd.forward(request, response);
+				rd.include(request, response);
 
 			} else {
 
